@@ -1,0 +1,12 @@
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/bin/Debug/net8.0/HoangTLM.Auth.deps.json
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/bin/Debug/net8.0/HoangTLM.Auth.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/bin/Debug/net8.0/HoangTLM.Auth.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.csproj.AssemblyReference.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.GeneratedMSBuildEditorConfig.editorconfig
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.AssemblyInfoInputs.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.AssemblyInfo.cs
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.csproj.CoreCompileInputs.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/refint/HoangTLM.Auth.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/HoangTLM.Auth.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Auth/obj/Debug/net8.0/ref/HoangTLM.Auth.dll

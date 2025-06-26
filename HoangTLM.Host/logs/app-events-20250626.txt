@@ -1,0 +1,414 @@
+2025-06-26T17:02:32.0901740+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:02:32.1673510+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:02:32.2430750+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:02:32.2975220+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:02:32.3109360+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-06-26T17:02:32.3208670+07:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-06-26T17:02:32.4418570+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Uoms] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:02:32.5022240+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Loyalty_Tiers] AS [l]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:02:32.5069800+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Products] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:02:32.5827240+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Product_Products] AS [p]" (0723d8ff)
+2025-06-26T17:02:32.6149990+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:02:32.6461310+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Customer_Customers] AS [c]" (0723d8ff)
+2025-06-26T17:02:32.6889530+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'admin@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:02:32.7197190+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'guest@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:02:32.7349540+07:00  [INF] User profile is available. Using '"/Users/minhhoang/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest. (a162847e)
+2025-06-26T17:02:32.7842190+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:02:32.8695280+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:02:32.9147250+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2025-06-26T17:02:32.9162930+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-06-26T17:02:32.9165290+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-06-26T17:02:32.9166130+07:00  [INF] Content root path: "/Users/minhhoang/Repos/ProjectCore/HoangTLM.Host" (cc26f24e)
+2025-06-26T17:02:33.2859900+07:00 0HNDKJ28UJI07:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5000""""/swagger/index.html""" - null null (d509f86a)
+2025-06-26T17:02:33.3458140+07:00 0HNDKJ28UJI07:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5000""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 60.1505ms (74253ad3)
+2025-06-26T17:02:33.4826030+07:00 0HNDKJ28UJI07:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5000""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-06-26T17:02:33.5285040+07:00 0HNDKJ28UJI07:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5000""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 45.8685ms (74253ad3)
+2025-06-26T17:02:45.7768210+07:00 0HNDKJ28UJI07:00000003 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5000""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:02:45.7841780+07:00 0HNDKJ28UJI07:00000003 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2025-06-26T17:02:45.7942850+07:00 0HNDKJ28UJI07:00000003 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:02:45.7968960+07:00 0HNDKJ28UJI07:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:02:45.7974780+07:00 0HNDKJ28UJI07:00000003 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5000""""/api/Product""" - 302 0 null 20.8059ms (74253ad3)
+2025-06-26T17:02:45.8005060+07:00 0HNDKJ28UJI07:00000004 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5000""""/Account/Login""?ReturnUrl=%2Fapi%2FProduct" - null null (d509f86a)
+2025-06-26T17:02:45.8027420+07:00 0HNDKJ28UJI07:00000004 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5000""""/Account/Login""?ReturnUrl=%2Fapi%2FProduct" - 404 0 null 2.2299ms (74253ad3)
+2025-06-26T17:02:45.8039410+07:00 0HNDKJ28UJI07:00000004 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "http"://"localhost:5000""""/Account/Login", Response status code: 404 (e353595a)
+2025-06-26T17:05:11.3938140+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:05:11.4138280+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:05:11.4174910+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:05:11.4201010+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:05:11.4304140+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-06-26T17:05:11.4373140+07:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-06-26T17:05:11.5544860+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Uoms] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:05:11.5866650+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Loyalty_Tiers] AS [l]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:05:11.6144100+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Products] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:05:11.6646240+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Product_Products] AS [p]" (0723d8ff)
+2025-06-26T17:05:11.7199750+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:05:11.7747910+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Customer_Customers] AS [c]" (0723d8ff)
+2025-06-26T17:05:11.7939870+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'admin@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:05:11.7979070+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'guest@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:05:11.8126170+07:00  [INF] User profile is available. Using '"/Users/minhhoang/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest. (a162847e)
+2025-06-26T17:05:11.8625310+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:05:11.8977780+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:05:12.0669670+07:00  [INF] Now listening on: "http://localhost:5287" (d826f4b8)
+2025-06-26T17:05:12.0670350+07:00  [INF] Now listening on: "https://localhost:7154" (d826f4b8)
+2025-06-26T17:05:12.0685160+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-06-26T17:05:12.0687030+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-06-26T17:05:12.0687210+07:00  [INF] Content root path: "/Users/minhhoang/Repos/ProjectCore/HoangTLM.Host" (cc26f24e)
+2025-06-26T17:05:12.4350130+07:00 0HNDKJ3OC1Q51:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger""" - null null (d509f86a)
+2025-06-26T17:05:12.4592200+07:00 0HNDKJ3OC1Q51:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger""" - 301 0 null 24.7431ms (74253ad3)
+2025-06-26T17:05:12.4655180+07:00 0HNDKJ3OC1Q51:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - null null (d509f86a)
+2025-06-26T17:05:12.4988150+07:00 0HNDKJ3OC1Q51:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 33.2694ms (74253ad3)
+2025-06-26T17:05:12.5102380+07:00 0HNDKJ3OC1Q51:00000003 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/swagger-ui.css""" - null null (d509f86a)
+2025-06-26T17:05:12.6089540+07:00 0HNDKJ3OC1Q52:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/swagger-ui-bundle.js""" - null null (d509f86a)
+2025-06-26T17:05:12.6091660+07:00 0HNDKJ3OC1Q53:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/swagger-ui-standalone-preset.js""" - null null (d509f86a)
+2025-06-26T17:05:12.8012450+07:00 0HNDKJ3OC1Q53:00000001 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2025-06-26T17:05:12.8014760+07:00 0HNDKJ3OC1Q51:00000003 [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2025-06-26T17:05:12.8036440+07:00 0HNDKJ3OC1Q51:00000003 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/swagger-ui.css""" - 200 152034 "text/css" 293.3904ms (74253ad3)
+2025-06-26T17:05:12.8036650+07:00 0HNDKJ3OC1Q53:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/swagger-ui-standalone-preset.js""" - 200 230280 "text/javascript" 194.4553ms (74253ad3)
+2025-06-26T17:05:12.8058500+07:00 0HNDKJ3OC1Q52:00000001 [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2025-06-26T17:05:12.8059280+07:00 0HNDKJ3OC1Q52:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/swagger-ui-bundle.js""" - 200 1456926 "text/javascript" 219.504ms (74253ad3)
+2025-06-26T17:05:12.9415470+07:00 0HNDKJ3OC1Q51:00000004 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-06-26T17:05:12.9436250+07:00 0HNDKJ3OC1Q52:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/favicon-32x32.png""" - null null (d509f86a)
+2025-06-26T17:05:12.9441020+07:00 0HNDKJ3OC1Q52:00000002 [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2025-06-26T17:05:12.9441620+07:00 0HNDKJ3OC1Q52:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 0.5376ms (74253ad3)
+2025-06-26T17:05:12.9464120+07:00 0HNDKJ3OC1Q52:00000003 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/favicon-16x16.png""" - null null (d509f86a)
+2025-06-26T17:05:12.9465690+07:00 0HNDKJ3OC1Q52:00000003 [INF] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"' (27b0a520)
+2025-06-26T17:05:12.9465970+07:00 0HNDKJ3OC1Q52:00000003 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/favicon-16x16.png""" - 200 665 "image/png" 0.2022ms (74253ad3)
+2025-06-26T17:05:12.9907190+07:00 0HNDKJ3OC1Q51:00000004 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 49.184ms (74253ad3)
+2025-06-26T17:05:28.4463080+07:00 0HNDKJ3OC1Q51:00000005 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:28.4531750+07:00 0HNDKJ3OC1Q51:00000005 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 6.9641ms (74253ad3)
+2025-06-26T17:05:28.5522730+07:00 0HNDKJ3OC1Q54:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:28.5624400+07:00 0HNDKJ3OC1Q54:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:05:28.5639970+07:00 0HNDKJ3OC1Q54:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:05:28.5645820+07:00 0HNDKJ3OC1Q54:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 12.5844ms (74253ad3)
+2025-06-26T17:05:32.8908900+07:00 0HNDKJ3OC1Q51:00000006 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:32.8917690+07:00 0HNDKJ3OC1Q51:00000006 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 0.8787ms (74253ad3)
+2025-06-26T17:05:32.9467600+07:00 0HNDKJ3OC1Q54:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:32.9518280+07:00 0HNDKJ3OC1Q54:00000003 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:05:32.9521450+07:00 0HNDKJ3OC1Q54:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:05:32.9522710+07:00 0HNDKJ3OC1Q54:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 5.6829ms (74253ad3)
+2025-06-26T17:05:34.1841000+07:00 0HNDKJ3OC1Q51:00000007 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:34.1849490+07:00 0HNDKJ3OC1Q51:00000007 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 0.7836ms (74253ad3)
+2025-06-26T17:05:34.1892100+07:00 0HNDKJ3OC1Q54:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:34.1906390+07:00 0HNDKJ3OC1Q54:00000005 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:05:34.1907510+07:00 0HNDKJ3OC1Q54:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:05:34.1908250+07:00 0HNDKJ3OC1Q54:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 1.632ms (74253ad3)
+2025-06-26T17:05:34.8770990+07:00 0HNDKJ3OC1Q51:00000008 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:34.8776800+07:00 0HNDKJ3OC1Q51:00000008 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 0.6082ms (74253ad3)
+2025-06-26T17:05:34.8810400+07:00 0HNDKJ3OC1Q54:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:05:34.8819090+07:00 0HNDKJ3OC1Q54:00000007 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:05:34.8820130+07:00 0HNDKJ3OC1Q54:00000007 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:05:34.8821010+07:00 0HNDKJ3OC1Q54:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 1.0713ms (74253ad3)
+2025-06-26T17:05:36.7493090+07:00 0HNDKJ3OC1Q51:00000009 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - null null (d509f86a)
+2025-06-26T17:05:36.7505760+07:00 0HNDKJ3OC1Q51:00000009 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1.1492ms (74253ad3)
+2025-06-26T17:05:36.7962960+07:00 0HNDKJ3OC1Q51:0000000A [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-06-26T17:05:36.8011800+07:00 0HNDKJ3OC1Q51:0000000A [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 4.9075ms (74253ad3)
+2025-06-26T17:05:51.4281930+07:00 0HNDKJ3OC1Q51:0000000B [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5287""""/api/Auth/login""" - "application/json" 50 (d509f86a)
+2025-06-26T17:05:51.4301020+07:00 0HNDKJ3OC1Q51:0000000B [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5287""""/api/Auth/login""" - 307 0 null 2.0806ms (74253ad3)
+2025-06-26T17:05:51.4328480+07:00 0HNDKJ3OC1Q54:00000009 [INF] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7154""""/api/Auth/login""" - null 0 (d509f86a)
+2025-06-26T17:05:51.4355100+07:00 0HNDKJ3OC1Q54:00000009 [INF] Executing endpoint '"405 HTTP Method Not Supported"' (500cc934)
+2025-06-26T17:05:51.4356740+07:00 0HNDKJ3OC1Q54:00000009 [INF] Executed endpoint '"405 HTTP Method Not Supported"' (99874f2b)
+2025-06-26T17:05:51.4357630+07:00 0HNDKJ3OC1Q54:00000009 [INF] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7154""""/api/Auth/login""" - 405 0 null 2.9134ms (74253ad3)
+2025-06-26T17:05:56.6026800+07:00 0HNDKJ3OC1Q51:0000000C [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5287""""/api/Auth/login""" - "application/json" 50 (d509f86a)
+2025-06-26T17:05:56.6033460+07:00 0HNDKJ3OC1Q51:0000000C [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5287""""/api/Auth/login""" - 307 0 null 0.6744ms (74253ad3)
+2025-06-26T17:05:56.6274450+07:00 0HNDKJ3OC1Q54:0000000B [INF] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7154""""/api/Auth/login""" - null 0 (d509f86a)
+2025-06-26T17:05:56.6281660+07:00 0HNDKJ3OC1Q54:0000000B [INF] Executing endpoint '"405 HTTP Method Not Supported"' (500cc934)
+2025-06-26T17:05:56.6282430+07:00 0HNDKJ3OC1Q54:0000000B [INF] Executed endpoint '"405 HTTP Method Not Supported"' (99874f2b)
+2025-06-26T17:05:56.6283630+07:00 0HNDKJ3OC1Q54:0000000B [INF] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7154""""/api/Auth/login""" - 405 0 null 22.4946ms (74253ad3)
+2025-06-26T17:06:19.7431510+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:06:19.7670210+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:06:19.7693580+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:06:19.7711380+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:06:19.7813930+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-06-26T17:06:19.7889430+07:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-06-26T17:06:19.9104300+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Uoms] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:06:19.9402090+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Loyalty_Tiers] AS [l]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:06:19.9675460+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Products] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:06:20.0377060+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Product_Products] AS [p]" (0723d8ff)
+2025-06-26T17:06:20.0670260+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:06:20.0992030+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Customer_Customers] AS [c]" (0723d8ff)
+2025-06-26T17:06:20.1491490+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'admin@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:06:20.1787220+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'guest@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:06:20.1930790+07:00  [INF] User profile is available. Using '"/Users/minhhoang/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest. (a162847e)
+2025-06-26T17:06:20.2439110+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:06:20.2830870+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:06:20.4496660+07:00  [INF] Now listening on: "http://localhost:5287" (d826f4b8)
+2025-06-26T17:06:20.4497050+07:00  [INF] Now listening on: "https://localhost:7154" (d826f4b8)
+2025-06-26T17:06:20.4511160+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-06-26T17:06:20.4512840+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-06-26T17:06:20.4513030+07:00  [INF] Content root path: "/Users/minhhoang/Repos/ProjectCore/HoangTLM.Host" (cc26f24e)
+2025-06-26T17:06:20.6489080+07:00 0HNDKJ4CMOBG5:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - null null (d509f86a)
+2025-06-26T17:06:20.7016900+07:00 0HNDKJ4CMOBG5:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 53.1676ms (74253ad3)
+2025-06-26T17:06:20.8323720+07:00 0HNDKJ4CMOBG5:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-06-26T17:06:20.8782080+07:00 0HNDKJ4CMOBG5:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 45.8128ms (74253ad3)
+2025-06-26T17:06:27.8762070+07:00 0HNDKJ4CMOBG5:00000003 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:06:27.8825070+07:00 0HNDKJ4CMOBG5:00000003 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 6.4376ms (74253ad3)
+2025-06-26T17:06:27.9865680+07:00 0HNDKJ4CMOBG6:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:06:27.9942380+07:00 0HNDKJ4CMOBG6:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:06:27.9960200+07:00 0HNDKJ4CMOBG6:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:06:27.9968070+07:00 0HNDKJ4CMOBG6:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 10.3014ms (74253ad3)
+2025-06-26T17:06:31.0048110+07:00 0HNDKJ4CMOBG5:00000004 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:06:31.0052320+07:00 0HNDKJ4CMOBG5:00000004 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 0.4841ms (74253ad3)
+2025-06-26T17:06:31.0360830+07:00 0HNDKJ4CMOBG6:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:06:31.0411320+07:00 0HNDKJ4CMOBG6:00000003 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:06:31.0414980+07:00 0HNDKJ4CMOBG6:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:06:31.0416220+07:00 0HNDKJ4CMOBG6:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 6.1857ms (74253ad3)
+2025-06-26T17:07:21.6422300+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:07:21.6647690+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:07:21.6682730+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-06-26T17:07:21.6700020+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-06-26T17:07:21.7054390+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-06-26T17:07:21.7134450+07:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-06-26T17:07:21.8057470+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Uoms] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:07:21.8363080+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Loyalty_Tiers] AS [l]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:07:21.8660610+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Product_Products] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:07:21.9115430+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Product_Products] AS [p]" (0723d8ff)
+2025-06-26T17:07:21.9183290+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:07:21.9727210+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Customer_Customers] AS [c]" (0723d8ff)
+2025-06-26T17:07:22.0911990+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'admin@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:07:22.1180930+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Customer_Customers] AS [c]
+        WHERE [c].[Email] = N'guest@system.local') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-06-26T17:07:22.1330630+07:00  [INF] User profile is available. Using '"/Users/minhhoang/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest. (a162847e)
+2025-06-26T17:07:22.1812920+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:07:22.2914830+07:00  [INF] Executed DbCommand ("76"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-06-26T17:07:22.5258290+07:00  [INF] Now listening on: "http://localhost:5287" (d826f4b8)
+2025-06-26T17:07:22.5258750+07:00  [INF] Now listening on: "https://localhost:7154" (d826f4b8)
+2025-06-26T17:07:22.5275640+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-06-26T17:07:22.5277940+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-06-26T17:07:22.5278140+07:00  [INF] Content root path: "/Users/minhhoang/Repos/ProjectCore/HoangTLM.Host" (cc26f24e)
+2025-06-26T17:07:22.8617240+07:00 0HNDKJ4V854I7:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - null null (d509f86a)
+2025-06-26T17:07:22.9180180+07:00 0HNDKJ4V854I7:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 56.4997ms (74253ad3)
+2025-06-26T17:07:23.0521540+07:00 0HNDKJ4V854I7:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-06-26T17:07:23.0993350+07:00 0HNDKJ4V854I7:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 47.1673ms (74253ad3)
+2025-06-26T17:07:26.2770590+07:00 0HNDKJ4V854I7:00000003 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:07:26.2847050+07:00 0HNDKJ4V854I7:00000003 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5287""""/api/Product""" - 307 0 null 7.7141ms (74253ad3)
+2025-06-26T17:07:26.3762580+07:00 0HNDKJ4V854I8:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - null null (d509f86a)
+2025-06-26T17:07:26.3875330+07:00 0HNDKJ4V854I8:00000001 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2025-06-26T17:07:26.3891380+07:00 0HNDKJ4V854I8:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-06-26T17:07:26.3898640+07:00 0HNDKJ4V854I8:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7154""""/api/Product""" - 302 0 null 13.6165ms (74253ad3)

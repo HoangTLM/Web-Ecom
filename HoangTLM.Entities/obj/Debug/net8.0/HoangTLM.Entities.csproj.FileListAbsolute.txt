@@ -1,0 +1,15 @@
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/bin/Debug/net8.0/HoangTLM.Entities.deps.json
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/bin/Debug/net8.0/HoangTLM.Entities.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/bin/Debug/net8.0/HoangTLM.Entities.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/bin/Debug/net8.0/HoangTLM.Core.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/bin/Debug/net8.0/HoangTLM.Core.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.csproj.AssemblyReference.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.AssemblyInfoInputs.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.AssemblyInfo.cs
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.csproj.CoreCompileInputs.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.E32568A6.Up2Date
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/refint/HoangTLM.Entities.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/ref/HoangTLM.Entities.dll

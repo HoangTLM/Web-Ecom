@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>HoangTLM.Host</RootNamespace>
+    <AssemblyName>HoangTLM.Host</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.15" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HoangTLM.Auth\HoangTLM.Auth.csproj" />
+    <ProjectReference Include="..\HoangTLM.EntityFramework\HoangTLM.EntityFramework.csproj" />
+    <ProjectReference Include="..\HoangTLM.Application\HoangTLM.Application.csproj" />
+    <ProjectReference Include="..\HoangTLM.Core\HoangTLM.Core.csproj" />
+  </ItemGroup>
+
+</Project>

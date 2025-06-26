@@ -1,0 +1,12 @@
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/bin/Debug/net8.0/HoangTLM.Core.deps.json
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/bin/Debug/net8.0/HoangTLM.Core.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/bin/Debug/net8.0/HoangTLM.Core.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.csproj.AssemblyReference.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.AssemblyInfoInputs.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.AssemblyInfo.cs
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.csproj.CoreCompileInputs.cache
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/refint/HoangTLM.Core.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/HoangTLM.Core.pdb
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Core/obj/Debug/net8.0/ref/HoangTLM.Core.dll

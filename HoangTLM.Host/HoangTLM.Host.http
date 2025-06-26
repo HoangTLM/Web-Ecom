@@ -1,0 +1,6 @@
+@HoangTLM.Host_HostAddress = http://localhost:5287
+
+GET {{HoangTLM.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
