@@ -13,15 +13,7 @@ namespace HoangTLM.Host
     {
         public static IServiceCollection AddHoangTLMAuthenticationAndAuthorization(this IServiceCollection services, IConfiguration configuration)
         {
-            // Register JWT authentication from HoangTLM.Auth
-            services.AddHoangTLMJwtAuthentication(
-                issuer: "ExampleIssuer",
-                audience: "ExampleAudience",
-                secretKey: "SuperSecretKey123456!"
-            );
-
-            services.AddAuthorization();
-
+            // Add Identity first
             services.AddDbContext<HoangTLMDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
@@ -29,7 +21,18 @@ namespace HoangTLM.Host
                 .AddEntityFrameworkStores<HoangTLMDbContext>()
                 .AddDefaultTokenProviders();
 
+            // Register JWT authentication from HoangTLM.Auth using configuration values
+            services.AddHoangTLMJwtAuthentication(
+                issuer: configuration["JwtSettings:Issuer"] ?? "HoangTLM",
+                audience: configuration["JwtSettings:Audience"] ?? "HoangTLMUsers",
+                secretKey: configuration["JwtSettings:SecretKey"] ?? "HoangTLM_Web_Api_Key_For_Learning_2025"
+            );
+
+            services.AddAuthorization();
+
+            // Register Repository with HoangTLMDbContext
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<DbContext, HoangTLMDbContext>();
 
             return services;
         }

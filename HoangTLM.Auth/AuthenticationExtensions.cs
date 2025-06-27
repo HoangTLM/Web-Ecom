@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Http;
 using System.Text;
 
 namespace HoangTLM.Auth
@@ -26,6 +27,21 @@ namespace HoangTLM.Auth
                     ValidIssuer = issuer,
                     ValidAudience = audience,
                     IssuerSigningKey = new SymmetricSecurityKey(key)
+                };
+                
+                // Cấu hình để tránh redirect và trả về 401 thay vì 302
+                options.Events = new JwtBearerEvents
+                {
+                    OnChallenge = async context =>
+                    {
+                        // Tắt automatic challenge để tránh redirect
+                        context.HandleResponse();
+                        
+                        context.Response.StatusCode = 401;
+                        context.Response.ContentType = "application/json";
+                        var result = System.Text.Json.JsonSerializer.Serialize(new { message = "Unauthorized" });
+                        await context.Response.WriteAsync(result);
+                    }
                 };
             });
             return services;

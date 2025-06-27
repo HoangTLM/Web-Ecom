@@ -12,6 +12,13 @@ namespace HoangTLM.Application
     {
         public ProductController(IRepository<Product_Product> repository) : base(repository) { }
 
+        [HttpGet("test")]
+        [AllowAnonymous]
+        public IActionResult Test()
+        {
+            return Ok(new { message = "API is working without authentication" });
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

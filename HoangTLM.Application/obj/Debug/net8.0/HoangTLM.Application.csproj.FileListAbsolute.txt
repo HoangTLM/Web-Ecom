@@ -15,3 +15,4 @@
 /Users/minhhoang/Repos/ProjectCore/HoangTLM.Application/obj/Debug/net8.0/refint/HoangTLM.Application.dll
 /Users/minhhoang/Repos/ProjectCore/HoangTLM.Application/obj/Debug/net8.0/HoangTLM.Application.pdb
 /Users/minhhoang/Repos/ProjectCore/HoangTLM.Application/obj/Debug/net8.0/ref/HoangTLM.Application.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Application/obj/Debug/net8.0/HoangTLM.Application.sourcelink.json

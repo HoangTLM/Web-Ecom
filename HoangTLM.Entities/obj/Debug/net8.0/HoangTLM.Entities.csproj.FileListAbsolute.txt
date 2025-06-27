@@ -13,3 +13,4 @@
 /Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/refint/HoangTLM.Entities.dll
 /Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.pdb
 /Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/ref/HoangTLM.Entities.dll
+/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/obj/Debug/net8.0/HoangTLM.Entities.sourcelink.json
