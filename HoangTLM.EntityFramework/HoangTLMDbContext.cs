@@ -29,6 +29,7 @@ namespace HoangTLM.EntityFramework
         public DbSet<Order_Cart> Order_Carts { get; set; }
         public DbSet<Order_CartItem> Order_CartItems { get; set; }
         public DbSet<Customer_Favorite> Customer_Favorites { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         public HoangTLMDbContext(DbContextOptions<HoangTLMDbContext> options) : base(options)
         {

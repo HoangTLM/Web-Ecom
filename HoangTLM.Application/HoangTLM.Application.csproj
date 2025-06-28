@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HoangTLM.Core\HoangTLM.Core.csproj" />
     <ProjectReference Include="..\HoangTLM.Entities\HoangTLM.Entities.csproj" />
+    <ProjectReference Include="..\HoangTLM.EntityFramework\HoangTLM.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

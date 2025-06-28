@@ -11,18 +11,26 @@
         <mat-icon style="font-size:48px; color:#0a3978;">account_circle</mat-icon>
       </div>
       <h2>Đăng nhập tài khoản <span class="brand">deskjoy</span></h2>
-      <form>
+      <form [formGroup]="loginForm" (ngSubmit)="submit()">
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Tên đăng nhập <span style="color:red">*</span></mat-label>
-          <input matInput placeholder="Nhập số điện thoại" required />
+          <input matInput formControlName="username" placeholder="Nhập số điện thoại" required />
         </mat-form-field>
-        <button mat-flat-button color="primary" class="full-width">Tiếp tục</button>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Mật khẩu <span style="color:red">*</span></mat-label>
+          <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" placeholder="Nhập mật khẩu" required />
+          <button mat-icon-button matSuffix type="button" (click)="togglePassword()">
+            <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+        </mat-form-field>
+        <button mat-flat-button color="primary" class="full-width" [disabled]="loading">Đăng nhập</button>
+        <div *ngIf="error" style="color:red; margin-top:8px;">{{ error }}</div>
       </form>
       <div class="login-policy">
         Bằng cách tiếp tục, bạn đồng ý với <a href="#">Điều khoản</a> và <a href="#">Chính sách bảo mật</a> của <b>deskjoy</b>
       </div>
       <div class="login-divider">Hoặc đăng nhập bằng</div>
-      <div class="login-social">
+      <div class="login-social" style="display:none">
         <button mat-stroked-button color="primary"><mat-icon>facebook</mat-icon></button>
         <button mat-stroked-button color="warn"><mat-icon>google</mat-icon></button>
       </div>

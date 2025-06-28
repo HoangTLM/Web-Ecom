@@ -31,6 +31,9 @@
               },
               "/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/HoangTLM.Entities.csproj": {
                 "projectPath": "/Users/minhhoang/Repos/ProjectCore/HoangTLM.Entities/HoangTLM.Entities.csproj"
+              },
+              "/Users/minhhoang/Repos/ProjectCore/HoangTLM.EntityFramework/HoangTLM.EntityFramework.csproj": {
+                "projectPath": "/Users/minhhoang/Repos/ProjectCore/HoangTLM.EntityFramework/HoangTLM.EntityFramework.csproj"
               }
             }
           }
@@ -435,6 +438,12 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
