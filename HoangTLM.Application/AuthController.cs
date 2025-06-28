@@ -29,6 +29,11 @@ namespace HoangTLM.Application
             _dbContext = dbContext;
         }
 
+        private int GetRefreshTokenExpirationDays()
+        {
+            return int.TryParse(_configuration["JwtSettings:RefreshTokenExpirationInDays"], out var refreshExp) ? refreshExp : 7;
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
@@ -59,13 +64,14 @@ namespace HoangTLM.Application
             var jwt = tokenHandler.WriteToken(token);
 
             // Tạo refresh token
+            var refreshTokenExpirationDays = GetRefreshTokenExpirationDays();
             var refreshToken = new RefreshToken
             {
                 Id = Guid.NewGuid(),
                 Token = Guid.NewGuid().ToString("N") + Guid.NewGuid().ToString("N"),
                 UserId = user.Id,
                 Created = DateTime.UtcNow,
-                Expires = DateTime.UtcNow.AddDays(7) // 7 ngày
+                Expires = DateTime.UtcNow.AddDays(refreshTokenExpirationDays)
             };
             _dbContext.RefreshTokens.Add(refreshToken);
             await _dbContext.SaveChangesAsync();
@@ -131,13 +137,14 @@ namespace HoangTLM.Application
             refreshToken.Revoked = DateTime.UtcNow;
 
             // Tạo refresh token mới (rotate)
+            var refreshTokenExpirationDays = GetRefreshTokenExpirationDays();
             var newRefreshToken = new RefreshToken
             {
                 Id = Guid.NewGuid(),
                 Token = Guid.NewGuid().ToString("N") + Guid.NewGuid().ToString("N"),
                 UserId = user.Id,
                 Created = DateTime.UtcNow,
-                Expires = DateTime.UtcNow.AddDays(7),
+                Expires = DateTime.UtcNow.AddDays(refreshTokenExpirationDays),
                 ReplacedByToken = refreshToken.Token
             };
             _dbContext.RefreshTokens.Add(newRefreshToken);
